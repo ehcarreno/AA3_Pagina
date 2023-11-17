@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa de Ingeniería de Sistemas</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            margin-bottom: 500px;
+        }
+
+        /* Estilos del encabezado con imagen de fondo */
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f2f2f2;
+            background-image: url('ing.sistemas.jpg'); 
+            background-size: cover;
+            color: #fff;
+        }
+
+        /* Estilo del título */
+        h1 {
+            font-size: 80px;
+            color: #e96e10;
+        }
+
+        /* Estilos del texto de bienvenida */
+        e {
+            font-size: 40px;
+            color: rgb(239, 187, 131), 111, 58);
+        }
+
+        /* Estilos del pie de página */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            background-color: #333;
+            color: #000000;
+            padding: 5px;
+            position: fixed;
+            bottom: 0;
+            width: 100%
+        }
+
+        /* Estilos para el mensaje de contacto */
+        .mensaje-contacto,
+        .siguenos {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin: 5px auto;
+            padding: 10px;
+            background-color: #f69737; 
+            border-radius: 10px; 
+            max-width: 10000px; 
+        }
+
+        /* Estilos para el mensaje de redes sociales */
+        .siguenos {
+            font-size: 17px;
+            margin-top: 10px;
+            
+        }
+
+        /* Estilos para las secciones desplegables */
+        .seccion-desplegable {
+            font-weight: bold;
+            color: #333;
+            margin: 20px;
+            position: relative;
+        }
+
+        .contenido-desplegable {
+            display: none;
+            margin-top: 10px;
+            position: absolute;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            padding: 10px;
+            z-index: 1;
+        }
+
+        /* Estilos para organizar las secciones en la página */
+        .contenedor-secciones {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .seccion-objetivos {
+            flex: 1;
+            text-align: right;
+        }
+
+        .seccion-cursos {
+            flex: 1;
+            text-align: center;
+        }
+
+        .seccion-requisitos {
+            flex: 1;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Programa de Ingeniería de Sistemas</h1>
+        <e>¡Bienvenido a nuestro programa de ingeniería de sistemas!</e>
+    </header>
+
+    <div class="contenedor-secciones">
+        <section class="seccion-desplegable seccion-objetivos" onmouseover="mostrarContenido('objetivosContenido')" onmouseleave="ocultarContenido('objetivosContenido')">
+            <h2>Objetivos del Programa</h2>
+            <div id="objetivosContenido" class="contenido-desplegable">
+                <p>Nuestro programa tiene como objetivos:</p>
+                <ul>
+                    <li>Formar profesionales capaces de diseñar y gestionar sistemas informáticos.</li>
+                    <li>Desarrollar habilidades en programación, análisis de datos y diseño de software.</li>
+                    <li>Preparar a los estudiantes para enfrentar los desafíos tecnológicos actuales y futuros.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="seccion-desplegable seccion-cursos" onmouseover="mostrarContenido('cursosContenido')" onmouseleave="ocultarContenido('cursosContenido')">
+            <h2>Cursos Destacados</h2>
+            <div id="cursosContenido" class="contenido-desplegable">
+                <ul>
+                    <li>Introducción a la Programación</li>
+                    <li>Arquitectura de Computadoras</li>
+                    <li>Bases de Datos</li>
+                    <li>Desarrollo de Software</li>
+                    <li>Redes de Computadoras</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="seccion-desplegable seccion-requisitos" onmouseover="mostrarContenido('requisitosContenido')" onmouseleave="ocultarContenido('requisitosContenido')">
+            <h2>Requisitos de Admisión</h2>
+            <div id="requisitosContenido" class="contenido-desplegable">
+                <ul>
+                    <li>Título de educación secundaria.</li>
+                    <li>Examen de admisión.</li>
+                    <li>Resultado prueba saber.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+
+
+    
+
+    <footer>
+        <div class="mensaje-contacto">
+            <p>Para obtener más información, póngase en contacto con nosotros en <a href="mailto:informacion@ingenieriasistemas.ehcg.edu.co">informacion@ingenieriasistemas.ehcg.edu.co</a>.</p>
+        </div>
+        <div class="siguenos">
+            <p>Síguenos en nuestras redes sociales:</p>
+            <div class="logos-redes">
+                <img src="facebook-logo.png" alt="Facebook">
+                <img src="twitter-logo.png" alt="Twitter">
+                <img src="instagram-logo.png" alt="Instagram">
+                <div>
+        </div>
+    <footer>
+
+
+        <script>
+            function mostrarContenido(idContenido) {
+                var contenido = document.getElementById(idContenido);
+                contenido.style.display = 'block';
+            }
+            
+            function ocultarContenido(idContenido) {
+                var contenido = document.getElementById (idContenido);
+                contenido.style.display = 'none';
+            }
+        </script>
+    </body>
+    </html>
